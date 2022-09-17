@@ -4,18 +4,15 @@
 #Program: Palindrome
 #Description: Checks the input array for a palindrome, and returns a yes if there is one.
 
-words = ["Computer","science","is ","aswesome","we","love","it","here"]
-result = False
+words = ["Computer","dad","is ","aswesome","we","love","it","here"]
+
 
 # isPalindrome checks if there is even 1 word that is a palindrome and if so it outputs true.
 def isPalindrome(words):
-    i = 0
-    while(result):
-        word = words[i]
-        if (word == word[::-1]):
-            result = True
-        i += 1
-
+	for x in words:
+		if(x==x[::-1]):
+			return True
+            
 # printResult checks what the result is and prints an output accordingly
 def printResult(result):
     if result:
@@ -23,7 +20,7 @@ def printResult(result):
     else:
         print("No palindromes found in the list of words.")       
 
-
-
+result = isPalindrome(words)
+printResult(result)
 
 
