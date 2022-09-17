@@ -16,7 +16,13 @@ def isPalindrome(words):
             result = True
         i += 1
 
-        
+# printResult checks what the result is and prints an output accordingly
+def printResult(result):
+    if result:
+        print("Yes, there is a palindrome in the list of words given!")
+    else:
+        print("No palindromes found in the list of words.")       
+
 
 
 
